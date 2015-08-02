@@ -19,15 +19,15 @@ date: 2012-11-10 22:54:11
 
 1.  安装好系统后，更新软件包列表和升级软件包
 
-    `sudo apt-get update && sudo apt-get upgrade`
+        sudo apt-get update && sudo apt-get upgrade
 
-2.  安装 subversion
+2. 安装 subversion
 
-    `sudo apt-get install subversion`
+        sudo apt-get install subversion
 
 3.  下载最新版的麦田PT
 
-    `svn checkout http://mtpt.googlecode.com/svn/trunk/ mtpt-read-only`
+        svn checkout http://mtpt.googlecode.com/svn/trunk/ mtpt-read-only
 
 **二、参考官方Wiki一步一步操作**
 
@@ -43,11 +43,11 @@ date: 2012-11-10 22:54:11
 
 2.  搭建好了之后，因为麦田 PT 是西北农林科技大学修改的，所以要针对我们的论坛修改一些网站设置。这时候还要搭建一个 FTP 服务器，方便上传和修改后台源文件。
 
-    `sudo apt-get install vsftpd`
+        sudo apt-get install vsftpd
 
     安装后配置 FTP
 
-    `sudo vi /etc/vsftpd.conf`
+        sudo vi /etc/vsftpd.conf
 
     设置
 
@@ -55,8 +55,10 @@ date: 2012-11-10 22:54:11
         local_enable=YES
         write_enable=YES
         local_umask=022
-
-    `sudo /etc/init.d/vsftpd restart`
+    
+    重启服务
+    
+        sudo /etc/init.d/vsftpd restart
 
     在FTP 软件输入本地用户名密码登陆即可
 
