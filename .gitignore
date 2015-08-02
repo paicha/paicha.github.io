@@ -99,3 +99,4 @@ public/
 .deploy*/
 db.json
 sync/
+deploy.sh
