@@ -1,4 +1,4 @@
-title: ZTE中兴客户端 for Windows / Linux
+title: ZTE 中兴客户端 for Windows / Linux
 tags:
   - Linux
   - 中兴客户端
