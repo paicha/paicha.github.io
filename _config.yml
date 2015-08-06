@@ -104,8 +104,8 @@ social:
 # Creative Commons 4.0 International License.
 creative_commons: by-nc-sa
 
-# CNZZ 统计
-cnzz_analytics: 3624367
+# 百度统计
+baidu_analytics: 9df3aca45fa71fa3c2d9331b6d0c8491
 
 # 备案
 beian: 粤 ICP 备 15063715 号
