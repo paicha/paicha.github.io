@@ -14,7 +14,7 @@ categories:
 
 以上就是我编程入门的作品。同学们看到微信里漂亮的排版，却不知道实现过程的糟糕，但是谁的第一次不是这样呢，重要的是```It Works!```。后来我凭借大学的经历获得了一份 Python 的实习工作，误打误撞，最后成为了一个前端程序员。毕业之后，由于校园团队里没合适的人接手开发，功能就没继续维护更新了。到现在自己技术成长了许多，也为了方便师弟接手维护，于是就把公众号后端重写了。
 
-GitHub 地址：https://github.com/paicha/gxgk-wechat-server
+GitHub 地址：[gxgk-wechat-server](https://github.com/paicha/gxgk-wechat-server)
 
 <!--more-->
 
@@ -24,6 +24,6 @@ GitHub 地址：https://github.com/paicha/gxgk-wechat-server
 
 除了主要的功能比较实用，其他小功能相对鸡肋，纯粹为了好玩。我认为程序员也应该关注产品体验的细节。所幸微信公众号开发几乎不涉及界面设计，界面上只要关注回复排版，比如文本的换、空行排版、```<a>```标签的使用。交互上要高效，尽量兼容用户的误输入。快递查询，可以扫条形码以及连续输入单号进行查询；成绩查询，绑定成功的同时就会发送消息给用户。
 
-发布不到两天，一个非工具类库，收到近 200 star，还上了 GitHub Trending ，心里小激动了一下。同时也收到了一些批评和交流，继续加油！
+发布不到两天，一个小众的应用，也不是工具类库，收到了 200 star，还上了 GitHub Trending ，心里小激动了一下。同时也收到了一些批评和交流，继续加油！
 
 ![GitHub Trending](/uploads/github-python-trending-2015-12-14.png)
