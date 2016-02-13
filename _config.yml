@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Paicha's Notes
-subtitle: Learn by doing.
-description: 排插仔的博客
-author: 排插仔
+title: 赖嘉伟的博客
+subtitle: I build things.
+description: 赖嘉伟的博客
+author: 赖嘉伟
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -96,7 +96,7 @@ duoshuo_share:
 # 社交链接，将在侧栏中显示
 social:
   GitHub: https://github.com/paicha
-  # Twitter: your-twitter-url
+  Twitter: https://twitter.com/paicha_me
   Weibo: http://weibo.com/paicha
   DouBan: http://www.douban.com/people/paicha
   ZhiHu: http://www.zhihu.com/people/paicha
