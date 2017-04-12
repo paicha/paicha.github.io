@@ -88,7 +88,7 @@ language: zh-Hans
 avatar: /uploads/paicha-avatar.jpg
 
 # 多说id
-duoshuo_shortname: paicha
+duoshuo_shortname:
 
 # 多说 分享服务（必须启用多说）
 duoshuo_share:
