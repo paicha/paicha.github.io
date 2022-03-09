@@ -28,6 +28,7 @@ twitter_username: paicha0530
 github_username:  paicha
 
 # Build settings
+permalink: /:year/:month/:day/:title
 theme: minima
 plugins:
   - jekyll-feed
