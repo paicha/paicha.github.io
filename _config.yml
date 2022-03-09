@@ -29,11 +29,16 @@ url: "https://paicha.me" # the base hostname & protocol for your site, e.g. http
 
 # Build settings
 permalink: /:year/:month/:day/:title
-
 theme: minima
+plugins:
+  - jekyll-feed
+
 minima:
   date_format: "%Y-%m-%d"
   social_links:
     twitter: paicha0530
     github: paicha
     instagram: lai.jia.wei
+
+feed:
+  excerpt_only: true
