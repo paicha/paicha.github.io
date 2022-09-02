@@ -23,7 +23,7 @@ author:
   name: Learn by doing.
   email: paicha.me@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Web 全栈开发者 / 产品经理 / 远程工作者
+  Web 开发者，用代码做产品。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://paicha.me" # the base hostname & protocol for your site, e.g. http://example.com
 

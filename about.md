@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Web 全栈开发者 / 产品经理 / 远程工作者
+Web 开发者，用代码做产品。
