@@ -14,6 +14,8 @@ categories:
 
 目前 Planet（9.0.2）的订阅功能支持 .eth 和 .bit 这两种基于区块链的域名系统。
 
+<!--more-->
+
 它们实际上是将 IPNS 写入了区块链，IPFS 客户端已经集成了 .eth 的解析，所以 Planet 自然也就支持 .eth 了。而 .bit 则需要自行集成，Planet 先通过 [indexer](https://github.com/dotbitHQ/das-account-indexer) 节点查询区块链数据，得到 IPNS 记录，完成订阅。
 
 除此之外，其实 IPFS 支持任意域名作为 IPNS。因为 DNS 本身就是一个解析服务，只要使用 TXT 记录指向 IPNS，IPFS 客户端就可以通过域名解析得到 IPNS。
