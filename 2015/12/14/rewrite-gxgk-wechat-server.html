@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>重写校园微信公众号 | 赖嘉伟Gary</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="重写校园微信公众号" />
+<meta name="author" content="Learn by doing." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2013 年，大二暑假。我第一次从零到一编写了一个 Web 应用，此前我都在运营维护 Discuz! 搭建的校园论坛、搭建过校园 PT 站，只懂 HTML、CSS 和 PHP 的一些基础。后来看到某大学的校园公众号的新闻，兴奋得晚上睡不着觉，第二天起来找编程资料，花了一周把《Learn Python the Hard Way》连爬带滚过了一遍，然后就动手写了。" />
+<meta property="og:description" content="2013 年，大二暑假。我第一次从零到一编写了一个 Web 应用，此前我都在运营维护 Discuz! 搭建的校园论坛、搭建过校园 PT 站，只懂 HTML、CSS 和 PHP 的一些基础。后来看到某大学的校园公众号的新闻，兴奋得晚上睡不着觉，第二天起来找编程资料，花了一周把《Learn Python the Hard Way》连爬带滚过了一遍，然后就动手写了。" />
+<link rel="canonical" href="https://paicha.me/2015/12/14/rewrite-gxgk-wechat-server" />
+<meta property="og:url" content="https://paicha.me/2015/12/14/rewrite-gxgk-wechat-server" />
+<meta property="og:site_name" content="赖嘉伟Gary" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-12-14T16:00:44+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="重写校园微信公众号" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Learn by doing."},"dateModified":"2015-12-14T16:00:44+00:00","datePublished":"2015-12-14T16:00:44+00:00","description":"2013 年，大二暑假。我第一次从零到一编写了一个 Web 应用，此前我都在运营维护 Discuz! 搭建的校园论坛、搭建过校园 PT 站，只懂 HTML、CSS 和 PHP 的一些基础。后来看到某大学的校园公众号的新闻，兴奋得晚上睡不着觉，第二天起来找编程资料，花了一周把《Learn Python the Hard Way》连爬带滚过了一遍，然后就动手写了。","headline":"重写校园微信公众号","mainEntityOfPage":{"@type":"WebPage","@id":"https://paicha.me/2015/12/14/rewrite-gxgk-wechat-server"},"url":"https://paicha.me/2015/12/14/rewrite-gxgk-wechat-server"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paicha.me/feed.xml" title="赖嘉伟Gary" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8654454873393203" crossorigin="anonymous"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">赖嘉伟Gary</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">重写校园微信公众号</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2015-12-14T16:00:44+00:00" itemprop="datePublished">
+        2015-12-14
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>2013 年，大二暑假。我第一次从零到一编写了一个 Web 应用，此前我都在运营维护 Discuz! 搭建的校园论坛、搭建过校园 PT 站，只懂 HTML、CSS 和 PHP 的一些基础。后来看到某大学的校园公众号的新闻，兴奋得晚上睡不着觉，第二天起来找编程资料，花了一周把《Learn Python the Hard Way》连爬带滚过了一遍，然后就动手写了。</p>
+
+<p>从暑假开始，陆续开发了录取查询、电影、天气、SimSimi、接入校园论坛数据、漂流瓶聊天、全校40多家外卖菜单、接入图书馆系统、快递查询、课表、成绩查询……加上运营的功夫，一个多学期，关注人数已经覆盖了三分之二的学生。</p>
+
+<p>以上就是我编程入门的作品。同学们看到微信里漂亮的排版，却不知道实现过程的糟糕，但是谁的第一次不是这样呢，重要的是<code class="language-plaintext highlighter-rouge">It Works!</code>。后来我凭借大学的经历获得了一份 Python 的实习工作，误打误撞，最后成为了一个前端程序员。毕业之后，由于校园团队里没合适的人接手开发，功能就没继续维护更新了。到现在自己技术成长了许多，也为了方便师弟接手维护，于是就把公众号后端重写了。</p>
+
+<p>GitHub 地址：<a href="https://github.com/paicha/gxgk-wechat-server">gxgk-wechat-server</a></p>
+
+<!--more-->
+
+<p>功能预览：</p>
+
+<p><img src="/assets/gxgk-preview.jpg" alt="功能预览" /></p>
+
+<p>除了主要的功能比较实用，其他小功能相对鸡肋，纯粹为了好玩。我认为程序员也应该关注产品体验的细节。所幸微信公众号开发几乎不涉及界面设计，界面上只要关注回复排版，比如文本的换、空行排版、<code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>标签的使用。交互上要高效，尽量兼容用户的误输入。快递查询，可以扫条形码以及连续输入单号进行查询；成绩查询，绑定成功的同时就会发送消息给用户。</p>
+
+<p>发布不到两天，一个小众的应用，也不是工具类库，收到了 200 star，还上了 GitHub Trending ，心里小激动了一下。同时也收到了一些批评和交流，继续加油！</p>
+
+<p><img src="/assets/github-python-trending-2015-12-14.png" alt="GitHub Trending" /></p>
+
+  </div><a class="u-url" href="/2015/12/14/rewrite-gxgk-wechat-server" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">Learn by doing.</li>
+          <li><a class="u-email" href="mailto:paicha.me@gmail.com">paicha.me@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web 开发者，用代码做产品。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/paicha" target="_blank" title="paicha"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/lai.jia.wei" target="_blank" title="lai.jia.wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://twitter.com/lai_jia_wei" target="_blank" title="lai_jia_wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
