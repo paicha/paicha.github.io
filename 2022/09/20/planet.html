@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>永不消失的网络 | 赖嘉伟Gary</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="永不消失的网络" />
+<meta name="author" content="Learn by doing." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="今天分享一款 V2EX 站长 Livid 发布的博客软件——Planet。" />
+<meta property="og:description" content="今天分享一款 V2EX 站长 Livid 发布的博客软件——Planet。" />
+<link rel="canonical" href="https://paicha.me/2022/09/20/planet" />
+<meta property="og:url" content="https://paicha.me/2022/09/20/planet" />
+<meta property="og:site_name" content="赖嘉伟Gary" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-20T05:02:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="永不消失的网络" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Learn by doing."},"dateModified":"2022-09-20T05:02:00+00:00","datePublished":"2022-09-20T05:02:00+00:00","description":"今天分享一款 V2EX 站长 Livid 发布的博客软件——Planet。","headline":"永不消失的网络","mainEntityOfPage":{"@type":"WebPage","@id":"https://paicha.me/2022/09/20/planet"},"url":"https://paicha.me/2022/09/20/planet"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paicha.me/feed.xml" title="赖嘉伟Gary" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8654454873393203" crossorigin="anonymous"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">赖嘉伟Gary</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">永不消失的网络</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2022-09-20T05:02:00+00:00" itemprop="datePublished">
+        2022-09-20
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>今天分享一款 V2EX 站长 Livid 发布的博客软件——Planet。</p>
+
+<!--more-->
+
+<p>乍听起来像是 15 年前的事物，先不说个人网站已经不流行了，今天的写作平台不应该网站优先、移动优先吗？</p>
+
+<p><img src="/assets/planet.png" alt="planet" /></p>
+
+<p>Planet 可以让用户近乎 0 成本获得一个免费、无托管、免备案的个人网站，并且可以互相订阅。它的特殊之处是，这个网站没有运行在某一个平台的服务器上，也不需要绑定某个域名。</p>
+
+<p>这是怎么做到的？如果忽略 Planet 的编辑、订阅功能，它实际上是一个 IPFS 上传工具。</p>
+
+<p>IPFS 简单理解就是一个去中心化网盘，把文件分散储存在别人家电脑。如果你熟悉 BT 下载，这和做种是类似的，发布内容的同时，也储存他人内容提供访问。</p>
+
+<p>把网站文件上传到 IPFS 还需要 Gateway（网关）服务才能在浏览器访问，这是加速访问 IPFS 文件的入口，任何人都可以建立这样的入口，所以有不少公共 Gateway。</p>
+
+<p>所以 Planet 发布的网站实际上是某个 Gateway 的访问地址，比如这是我发布的网站，前面是 Gateway，后面是寻找文件的标识：https://ipfs.io/ipns/k51qzi5uqu5dicntuik6dvxxkjyvz4sya18svfe15z3vor3or65yttiase3np7/</p>
+
+<p>Planet 作为博客工具很原始，制作的个人网站也很简陋，没有点赞，也没有粉丝。现在有各种内容社交平台，做这些的意义是什么呢？</p>
+
+<p>我们以前常常说，互联网是有记忆的。</p>
+
+<p>但后来发现并不是的，网站帖子可以消失，App 可以突然永久维护，网盘会倒闭关停，搜索引擎快照功能也会集体下线……</p>
+
+<p>世上并没有云服务，只有别人的服务器，一旦网络内容因为某些极端情况丢失，很快就消失在互联网了。</p>
+
+<p>自己租服务器做站长是一个办法，但对普通人来说难度太高。而且网站也可以被停止解析，俗称「拔网线」，再极端一点，甚至站长也可能会意外离世。</p>
+
+<p>但通过 IPFS 背后古老的 P2P（点对点）技术，你可以把网站内容保存在无数人的电脑里，只要有人访问，这个内容就不会消失。</p>
+
+<p>Planet 做的事情确实没有平台那么方便和快速，甚至用户极少的时候，内容短暂丢失也是有可能的。</p>
+
+<p>但它真正在意的是什么？用户的数据应该是属于用户自己的，而不是成为自己数据的租用者，它应该像在桌面新建文件一样，保存在「我的电脑」。</p>
+
+<p>但是真的可以做到永不消失吗？</p>
+
+<p>这其实是一个伪命题，没有什么是永恒的。</p>
+
+<p>在这个网络里有人访问就会顺便保存，所以<strong>真正的消失是，世界上再没有一个人访问过你了</strong>。</p>
+
+<p>这很酷。</p>
+
+<hr />
+
+<p><strong>推荐阅读</strong></p>
+
+<p><a href="https://www.planetable.xyz/">Planet 官网</a></p>
+
+<p><a href="https://www.zxch3n.com/local-first/">【译】本地优先软件 Local-first software</a></p>
+
+<p><a href="https://www.xiaoyuzhoufm.com/episode/626ba660bf39836fd02b78e9">Vol. 67 Livid: 十年V2EX，复古游戏，和未来</a></p>
+
+  </div><a class="u-url" href="/2022/09/20/planet" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">Learn by doing.</li>
+          <li><a class="u-email" href="mailto:paicha.me@gmail.com">paicha.me@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web 开发者，用代码做产品。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/paicha" target="_blank" title="paicha"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/lai.jia.wei" target="_blank" title="lai.jia.wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://twitter.com/lai_jia_wei" target="_blank" title="lai_jia_wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

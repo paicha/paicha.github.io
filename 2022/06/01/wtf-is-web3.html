@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>到底什么是 web3 ？（二） | 赖嘉伟Gary</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="到底什么是 web3 ？（二）" />
+<meta name="author" content="Learn by doing." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="上一篇，我们知道了无许可和所有权，回顾了互联网的发展历程。互联网的发展依赖信息科技的进步，既然 web3 被吹捧为「下一代互联网」，它带来了什么新技术呢？" />
+<meta property="og:description" content="上一篇，我们知道了无许可和所有权，回顾了互联网的发展历程。互联网的发展依赖信息科技的进步，既然 web3 被吹捧为「下一代互联网」，它带来了什么新技术呢？" />
+<link rel="canonical" href="https://paicha.me/2022/06/01/wtf-is-web3" />
+<meta property="og:url" content="https://paicha.me/2022/06/01/wtf-is-web3" />
+<meta property="og:site_name" content="赖嘉伟Gary" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-01T14:14:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="到底什么是 web3 ？（二）" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Learn by doing."},"dateModified":"2022-06-01T14:14:00+00:00","datePublished":"2022-06-01T14:14:00+00:00","description":"上一篇，我们知道了无许可和所有权，回顾了互联网的发展历程。互联网的发展依赖信息科技的进步，既然 web3 被吹捧为「下一代互联网」，它带来了什么新技术呢？","headline":"到底什么是 web3 ？（二）","mainEntityOfPage":{"@type":"WebPage","@id":"https://paicha.me/2022/06/01/wtf-is-web3"},"url":"https://paicha.me/2022/06/01/wtf-is-web3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paicha.me/feed.xml" title="赖嘉伟Gary" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8654454873393203" crossorigin="anonymous"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">赖嘉伟Gary</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">到底什么是 web3 ？（二）</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2022-06-01T14:14:00+00:00" itemprop="datePublished">
+        2022-06-01
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>上一篇，我们知道了无许可和所有权，回顾了互联网的发展历程。互联网的发展依赖信息科技的进步，既然 web3 被吹捧为「下一代互联网」，它带来了什么新技术呢？</p>
+
+<!--more-->
+
+<h2 id="1-应用依赖底层技术">1. 应用依赖底层技术</h2>
+
+<p>我们可以把一个网站或者 App 的运行机制做一个简单的分层：</p>
+
+<ol>
+  <li>应用程序（网站、App）</li>
+  <li>操作系统（Windows、苹果系统）</li>
+  <li>硬件平台（电脑、手机）</li>
+</ol>
+
+<p>各种应用的涌现，都离不开底层系统和硬件持续不断的技术创新。</p>
+
+<h3 id="11-过去硬件性能的提升">1.1 过去硬件性能的提升</h3>
+
+<p>芯片行业有一条知名的摩尔定律——芯片晶体管数量每隔 2 年会翻一倍。根据芯片晶体管与性能关系的换算，也就是每隔 18 个月就可以买到性能翻倍的电脑。</p>
+
+<p>从 1MB 的软盘到 32TB 的硬盘、从 56Kbps 电话调制解调器到千兆光纤入户、从大型机到移动手机……都离不开摩尔定律的延续。</p>
+
+<h3 id="12-web3-的硬件">1.2 web3 的硬件</h3>
+
+<p>摩尔定律有体现在 web3 的区块链技术上吗？</p>
+
+<p>有，也没有。</p>
+
+<p>大家都知道 BTC 是通过「挖矿」产出的，Bitcoin 挖矿的原理是比拼大家的矿机运算能力，谁的算力越高就越容易争抢到最新一次 Bitcoin 网络的记账权，并获得 BTC 奖励。</p>
+
+<p>矿机生产商发现有利可图，就不断研发推出单位能耗算力更高的矿机，矿机商之间、矿工之间就形成了「算力军备竞赛」。</p>
+
+<p>这也是 web3 跟摩尔定律没什么关系的地方。挖矿运算是一种特殊运算，不能运用在软件开发领域，就像 F1 方程式赛车目的只有比赛。其次，矿机运算既不能接力也不能分工，反而每一台矿机都是互相竞争的关系。</p>
+
+<p>矿机商、矿工在这个过程中赚到钱，网络也没有得到性能提升，那挖矿究竟为了什么呢？</p>
+
+<p>其实挖矿的设计并不是为了性能，这是一种通过奖励网络建设者（矿工），利用能源壁垒提高作弊成本的设计。攻击网络需要控制全网一半以上的矿机。所以挖矿是为了提高系统的去中心化和安全性，这也是无许可和所有权的基石。</p>
+
+<h3 id="13-web3-的系统">1.3 web3 的系统</h3>
+
+<p>即便挖矿没有增加系统性能，但区块链平台的性能应该不差吧？</p>
+
+<p>我们以 Ethereum（以太坊）为例。</p>
+
+<p>Ethereum 虽然可以看作是一台计算机，但是它不运行在某个服务器机房，而是运行在一个全球性、去中心化、由大量匿名网络节点组成的分布式系统里。</p>
+
+<p>举个不恰当的例子，就像《哈利波特》中的伏地魔，为了追求永生制作了 7 个魂器，削弱了本体，每个魂器拥有独立的灵魂，想要消灭伏地魔就必须消灭每一个魂器。Ethereum 网络的每一个节点就像一个魂器，想要彻底关闭 Ethereum 网络就必须关闭全球的每一个 Ethereum 节点。</p>
+
+<p>这样的设计是为了保证去中心化和安全性，从而牺牲了性能。这造成 Ethereum 的交易处理速度只有每秒 15 笔左右。我们再拿一个常见的计算场景做比较，如果在 Ethereum 上做一个文件压缩的运算，运行效率别说跟手机比，甚至还不如一块小天才智能手表。</p>
+
+<p>这大概是区块链技术最让人费解的地方——搞算力挖矿又搞分布式节点，耗费大量人力物力，完全不在乎运行效率。</p>
+
+<p>其实 Ethereum 并不是要建造一台传统计算机，而是为了建造一台公共信任机器。</p>
+
+<p>今天我们注册使用任何互联网服务，用户数据都是存储在企业的私有服务器上，我们无条件信任服务商，享受服务的便利。</p>
+
+<p>存储用户数据的数据库就像一张 Excel 表格，而网站后台的数据库就像是私人电脑里的 Excel 文件。</p>
+
+<p>而公共信任机器是实现一种不依赖任何第三方，让数据库表格可以被公开编辑的机制。</p>
+
+<p>尝试想象一张巨大的、人人都可以编辑的 Excel 表格，每个单元格都有密码保护，复杂的数据也可以由 Excel 内置函数计算得出。每一次修改表格会保存一个历史版本，表格数据公开可信任，运行在一个无法关闭的公共网络里。</p>
+
+<h3 id="14-web3-的开发效率">1.4 web3 的开发效率</h3>
+
+<p>在这张 Excel 表格上运行的函数代码称为智能合约。web3 应用就是通过编写智能合约修改 Excel 表格的数据。</p>
+
+<p>Ethereum 的计算资源是有上限的，为了避免资源滥用，Ethereum 引入了 Gas（燃料）费的设计，正如车辆需要汽油一样，运行代码也需要花钱。</p>
+
+<p>但这个汽油价格并不是稳定的，受 Ethereum 的币价波动。供需由市场决定，并且是拍卖的形式。所以每当网络拥堵的时候，Gas 费就非常贵。</p>
+
+<p>原本 web2 的开发标准是「能用就行」，但 web3 的智能合约里，每一行代码都必须精雕细琢，代码精简、减少运行时间才能减少运行费用。</p>
+
+<p>更难的是，智能合约一经部署就不能再次修改、升级。</p>
+
+<p>这让开发者变得十分谨慎。web2 项目发布后可以有修复、升级方案。但 web3 的智能合约必须一开始就追求零失误，因为代码错误轻则浪费大量运行费用，重则导致资产被盗，项目破产。</p>
+
+<p>这就像是要求 F1 赛车手在没有车队支援的情况下也要跑完全程，爆胎起火也无法离场。</p>
+
+<p>除了代码编写需要十分谨慎，智能合约也有一些 web2 非常基础的功能无法实现。比如常见的随机数、读取现实世界的数据（因为数据不可信）。</p>
+
+<p>这些编程机制都导致了 web3 的开发效率低下。智能合约诞生 7 年了，至今为止 web3 的开发效率依旧远远不及 web2。</p>
+
+<h2 id="2-快速试错的能力">2. 快速试错的能力</h2>
+
+<p>创新的本质是试错。试错成本越低，开发效率越高，创新的周期就越短。</p>
+
+<p>硬件的发布方式是提前反复设计，确保零失误，一经发布不再更新。比如手机，虽然可以通过系统升级变得更省电，但是想要换一块电池是不行的。</p>
+
+<p>应用软件的发布方式是最小可用模块研发、持续性发布。这种发布方式的容错性更高，可以让产品快速推出市场获得反馈，同时快速迭代以适应变化的市场需求。</p>
+
+<p>对比当下的 web3，会发现一个严重阻碍创新的问题——web3 的发布方式堪比硬件。</p>
+
+<p>越底层的技术越难升级，Ethereum 升级的预期完成时间一直从 2020 年一路推迟到了 2022 年。写代码也不允许出错，导致主流项目的研发周期基本是按年计算，大大小小的 web3 项目一再跳票已经是司空见惯了。用户使用需要非常谨慎，钱包私钥丢了就永远找不回了。</p>
+
+<p>web3 缺少了以往快速试错的能力，或者说容错率低。web3 自身也不一定能解决这个问题，毕竟区块链追求的就是不可篡改。</p>
+
+<h2 id="3-技术成果叠加">3. 技术成果叠加</h2>
+
+<p>或者我们可以用另一个思路来解决容错率的问题。</p>
+
+<p>区块链的原教旨主义者总喜欢批判 web2 的中心化，认为去中心化是一切的解药，不惜抛弃过去的技术成果，要在 web3 上建立一个去中心化的数字世界。</p>
+
+<p>但这只能是一个美好的幻想，连最基础的数据隐私，区块链都难以实现；也不是所有内容都值得保存在区块链上，发一条朋友圈真的需要区块链吗？</p>
+
+<p>一些狂热的 web3 支持者也总喜欢讲「颠覆」。但我们看到 web1、web2 并不是后者颠覆前者，它的发展更像是进化的过程，技术的成果是叠加的。</p>
+
+<p>今天一样有门户网站、BBS 论坛、博客网站在持续运行；一个 App 里也常常有分类导航、搜索框、订阅按钮和算法推荐。每个阶段的 Web 产品会结合过去和当下的技术、模式，形成创新的解决方案，而不是另起炉灶。</p>
+
+<p>回到 web3 的一些技术特性上，如果 web3 追求极致的安全性，那它的易用性必然是随之降低的，而易用性就是今天 web2 擅长的地方。</p>
+
+<p>或许 web3 的开发者应该重新审视一下区块链这个闪闪发亮的锤子，思考与过去技术成果结合的解决方案（尴尬的是，这样做很可能就不会受到市场追捧了）。</p>
+
+<h2 id="4-web3-的大规模应用">4. web3 的大规模应用</h2>
+
+<p>web3 技术的成熟度直接影响用户体验。迟迟没有出现大规模应用可以借用俞军老师的用户价值公式解释：</p>
+
+<p>用户价值 = 新体验 - 旧体验 - 替换成本</p>
+
+<p>先说开发者，开发者也是一种用户。首先技术成熟度对比现在的 Web 开发差了一大截，应用范围、编程难度、开发成本都是负分的体验。其次行业印象也很重要，主流互联网从业者对当前 web3 的看法都倾向于负面，当然这也是 web3 的乱象造成的。</p>
+
+<p>再说普通用户。今天我们注册一个账号通过手机号、验证码就可以完成了，这才叫用户体验。但是作为 web3 的用户，你需要学习如何创建钱包、理解助记词和私钥、如何备份……一通下来，硬是把用户逼成了一个 web3 产品专家。</p>
+
+<p>既然门槛高体验差，为什么 web3 还能不断吸引新用户？还是因为财富效应。如果我们把金融属性从 web3 应用剥离，大概率 99% 的 web3 应用是没人愿意用的，这也是今天 web3 尴尬的地方。但也可以反过来理解，处理数字是目前 web3 最擅长的地方。</p>
+
+<p>面对这些问题，也有一批更关注技术和用户的基础设施开发者在努力改变现状，比如 Ethereum 即将迎来大升级、web3 也开始出现一些不发币的账号通行证项目。</p>
+
+<h2 id="5-为什么需要-web3">5. 为什么需要 web3</h2>
+
+<p>前面讲的是 web3 底层技术的创新性，它并没有在 web2 的技术基础上发展，而且对开发者和用户来说，可用性和体验都不足。</p>
+
+<p>我们真的需要这样的 web3 吗？</p>
+
+<h3 id="51-数字生活的价值">5.1 数字生活的价值</h3>
+
+<p>现在说到 web3 常常会提到元宇宙，其实 web1、web2 也有元宇宙。</p>
+
+<p>元宇宙的解读天花乱坠，但有一个解释非常自然——元宇宙并不是一个虚拟空间，而是一个时刻。</p>
+
+<p>当数字生活比物理生活更有价值的时刻。</p>
+
+<p>过去几十年，数字化持续改变我们生活、娱乐、社交、工作的方式，这一切都是不可逆的。</p>
+
+<p>生产活动不再手工制作而是机械化生产、听音乐不再是买 CD 而是通过流媒体、更多年轻人喜欢玩电子游戏而不是体育运动。</p>
+
+<p>社交形象也开始数字化了，朋友圈的你其实并不是真实的你，而是加了滤镜的数字形象。而现在，资产也开始变成数字货币了。</p>
+
+<p>从更大的时间刻度看，人们花在屏幕上的时间只会有增无减，新的联网设备也会层出不穷，数字生活的比重会越来越高。</p>
+
+<p>这意味着数字世界的内容变得有独特价值，形成数字资产，比如社交账号、照片视频、游戏账号、游戏装备……</p>
+
+<p>面对越来越重要的数字生活，需要有新技术来保证数字资产的可靠性。这就是 web3 底层技术发挥的场景。</p>
+
+<p>这时候你可能会问，我们现在的用户数据保存在大公司的服务器就不可靠了吗？</p>
+
+<h3 id="52-过度中心化的问题">5.2 过度中心化的问题</h3>
+
+<p>现在很多言论会把大公司看作是「恶龙」，而 web3 就是屠龙故事里的少年勇士。但我认为像腾讯、Google 这些大公司是值得尊敬的，在充分竞争的自由市场上，他们解决了足够多、足够难的问题，才获得了丰厚的社会奖励，才成为了大公司。</p>
+
+<p>今天的大平台存在很多问题，信息孤岛、数据隐私、内容审查……但这些问题并不是大平台的主观作恶，更多是过度中心化的弊端。</p>
+
+<h4 id="web1-的半中心化">web1 的半中心化</h4>
+
+<p>web1 时代算是半中心化，数据量远没有 UGC 的数据量庞大，当时注册账号主要是为了方便用户下次访问。</p>
+
+<p>很多协议是开放的，数据内容对搜索引擎开放，文章里的网址是可以自由跳转的，RSS 阅读器之间也可以自由导入导出订阅列表。</p>
+
+<h4 id="web2-的信息孤岛">web2 的信息孤岛</h4>
+
+<p>web2 的 App 形成了一个个的信息孤岛，平台服务不互通，严重的甚至互相屏蔽、逼用户二选一。</p>
+
+<p>初中那会刚学会上网，有一天我就想，为什么 QQ、迅雷都要注册不同的账号？为什么不能一套账号密码全网络通用呢？当时看来挺幼稚的想法，其实是非常符合直觉的。</p>
+
+<h4 id="用户成为平台的一部分">用户成为平台的一部分</h4>
+
+<p>平台的封闭加上用户社交关系、用户数据的沉淀，用户越来越离不开这些大平台。</p>
+
+<p>在网络平台上，虽然你可能没有花钱，但你为其他用户提供了存在感，为广告主贡献了点击率，同时还在为平台提供用户数据。</p>
+
+<p>这些沉淀的用户数据还可以被平台用作「提供更好的服务」，比如打车的行驶数据、刷短视频的点赞评论、输入法的记录都可以被分析，不断反哺产品的更新迭代。理论上用户也有知情同意，但更多是形式上的征求同意：「不同意就别用了」。</p>
+
+<p>用户为了便利或者没有其他选择，向中心化平台让出了原本属于自己权利。如果我们阅读平台的注册条款，就会发现账号所有权是归平台所有的，用户仅获得账号的使用权，也就是相当于平台向用户出租了一个账号。</p>
+
+<p>在今天，网络账号已经成为一个人的虚拟身份了，账号封杀可以让一个人消失在数字世界里，甚至影响出行、消费。</p>
+
+<h4 id="平台影响力与责任">平台影响力与责任</h4>
+
+<p>过度的中心化让大平台拥有了巨大的影响力。Facebook 就像一个数字帝国，平台上的新闻、舆论可以影响一个国家的选举。微信成为了日常生活的通行证，出行、支付、民生、医疗处处都离不开它。</p>
+
+<p>大平台给人们生活带来改变是一个事实，但人们开始担忧它的影响力渗透，哪怕这些平台都在努力透明化，接受监管。而且我们也开始看到，在特殊情况下，大平台也会成为制裁的工具。</p>
+
+<p>过度的中心化也让大平台背负更多的责任。比如内容审查、账号封禁，违法内容的责任主体是平台，平台为了适应生存的需要主动自我审查，背后也是现实世界权力在数字世界的延伸。</p>
+
+<h4 id="web3-不是屠龙少年">web3 不是屠龙少年</h4>
+
+<p>面对这些大公司的问题，不少 web3 「信徒」对去中心化寄予厚望。但是去中心化只是一种网络形态，在 web3 一样可以有内容审查、用户数据分析。web3 能做的可能是缓解过度中心化，给用户带来更多选择权。</p>
+
+<hr />
+
+<p>相信看到这里，你也会提出自己的质疑，一边是底层技术仍在早期、用户体验差，另一边是数字生活才刚开始，中心化的问题也没有迫在眉睫。这是不是拿铁棍（还不是铁锤）在免钉安装的柜子上找钉子呢？唯一真正落地的应用其实是去中心化赌场。</p>
+
+<p>这是 web3 的尴尬现状，但不妨碍我们去探讨泡沫之下 web3 的底层逻辑。</p>
+
+<p>下一篇文章（也是最后一篇啦），我会结合内容创作讲述 web3 核心价值的实际作用，web3 想做什么、不能做什么。以及介绍当前 web3 世界的新玩法和交易模式，也会开一些好玩的脑洞。</p>
+
+<h4 id="推荐扩展阅读">推荐扩展阅读</h4>
+
+<p><a href="https://www.xiaoyuzhoufm.com/episode/5e2aadfe418a84a0465405c4">#83 这次我们聊聊超酷的 Ethereum</a> - Teahour</p>
+
+<p><a href="https://www.xiaoyuzhoufm.com/episode/603db71d30638eea2cef9ec1">晚风说 E90：谢晗剑 (Jan) - 祛魅比特币</a> - 晚风说</p>
+
+<p><a href="https://twitter.com/ShaanVP/status/1454151237650112512">Everyone is wrong about the Metaverse.</a> - Shaan Puri</p>
+
+<p><a href="https://moxie.org/2022/01/07/web3-first-impressions.html">My first impressions of web3</a> - Moxie Marlinspike</p>
+
+<p><a href="https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03">I was wrong, we need crypto</a> - DHH</p>
+
+  </div><a class="u-url" href="/2022/06/01/wtf-is-web3" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">Learn by doing.</li>
+          <li><a class="u-email" href="mailto:paicha.me@gmail.com">paicha.me@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web 开发者，用代码做产品。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/paicha" target="_blank" title="paicha"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/lai.jia.wei" target="_blank" title="lai.jia.wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://twitter.com/lai_jia_wei" target="_blank" title="lai_jia_wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

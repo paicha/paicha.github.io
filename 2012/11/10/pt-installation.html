@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>麦田 PT 架设手记 | 赖嘉伟Gary</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="麦田 PT 架设手记" />
+<meta name="author" content="Learn by doing." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="一直都在忙着弄学校的论坛，在上学期我们论坛就上线了BT共享的应用。主要是通过在学校架设公共的BT服务器，然后在论坛做种发帖来分享资源。这种方法最大的缺点就是缺少 PT 站点的强制做种机制，导致做种人数太少。很多人下载后就撤种，不少资源都只有我一个人做种；再者就是资源的分类、下载列表不够 PT 站点专业和直观，不利于长远的发展。一般大一点的高校都有自己的 PT 站点，有完善的分享机制，更加有利于分享资源。虽然我们学校不大，但如果有几百、上千人的爱好者长期分享的话，还是可以试一试的。哈哈，说不定一不小心，就创造广科的历史了。" />
+<meta property="og:description" content="一直都在忙着弄学校的论坛，在上学期我们论坛就上线了BT共享的应用。主要是通过在学校架设公共的BT服务器，然后在论坛做种发帖来分享资源。这种方法最大的缺点就是缺少 PT 站点的强制做种机制，导致做种人数太少。很多人下载后就撤种，不少资源都只有我一个人做种；再者就是资源的分类、下载列表不够 PT 站点专业和直观，不利于长远的发展。一般大一点的高校都有自己的 PT 站点，有完善的分享机制，更加有利于分享资源。虽然我们学校不大，但如果有几百、上千人的爱好者长期分享的话，还是可以试一试的。哈哈，说不定一不小心，就创造广科的历史了。" />
+<link rel="canonical" href="https://paicha.me/2012/11/10/pt-installation" />
+<meta property="og:url" content="https://paicha.me/2012/11/10/pt-installation" />
+<meta property="og:site_name" content="赖嘉伟Gary" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-11-10T14:54:11+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="麦田 PT 架设手记" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Learn by doing."},"dateModified":"2012-11-10T14:54:11+00:00","datePublished":"2012-11-10T14:54:11+00:00","description":"一直都在忙着弄学校的论坛，在上学期我们论坛就上线了BT共享的应用。主要是通过在学校架设公共的BT服务器，然后在论坛做种发帖来分享资源。这种方法最大的缺点就是缺少 PT 站点的强制做种机制，导致做种人数太少。很多人下载后就撤种，不少资源都只有我一个人做种；再者就是资源的分类、下载列表不够 PT 站点专业和直观，不利于长远的发展。一般大一点的高校都有自己的 PT 站点，有完善的分享机制，更加有利于分享资源。虽然我们学校不大，但如果有几百、上千人的爱好者长期分享的话，还是可以试一试的。哈哈，说不定一不小心，就创造广科的历史了。","headline":"麦田 PT 架设手记","mainEntityOfPage":{"@type":"WebPage","@id":"https://paicha.me/2012/11/10/pt-installation"},"url":"https://paicha.me/2012/11/10/pt-installation"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paicha.me/feed.xml" title="赖嘉伟Gary" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8654454873393203" crossorigin="anonymous"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">赖嘉伟Gary</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">麦田 PT 架设手记</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2012-11-10T14:54:11+00:00" itemprop="datePublished">
+        2012-11-10
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>一直都在忙着弄学校的论坛，在上学期我们论坛就上线了BT共享的应用。主要是通过在学校架设公共的BT服务器，然后在论坛做种发帖来分享资源。这种方法最大的缺点就是缺少 PT 站点的强制做种机制，导致做种人数太少。很多人下载后就撤种，不少资源都只有我一个人做种；再者就是资源的分类、下载列表不够 PT 站点专业和直观，不利于长远的发展。一般大一点的高校都有自己的 PT 站点，有完善的分享机制，更加有利于分享资源。虽然我们学校不大，但如果有几百、上千人的爱好者长期分享的话，还是可以试一试的。哈哈，说不定一不小心，就创造广科的历史了。</p>
+
+<!--more-->
+
+<p>使用的是 ubuntu-12.10-server-amd64 系统，安装系统时选择组件 SSH、LAMP。</p>
+
+<p><strong>一、准备工作：</strong></p>
+
+<ol>
+  <li>
+    <p>安装好系统后，更新软件包列表和升级软件包</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>安装 subversion</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo apt-get install subversion
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>下载最新版的麦田PT</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>svn checkout http://mtpt.googlecode.com/svn/trunk/ mtpt-read-only
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>二、参考官方Wiki一步一步操作</strong></p>
+
+<p><a href="https://code.google.com/p/mtpt/wiki/InstallGuide">https://code.google.com/p/mtpt/wiki/InstallGuide</a></p>
+
+<p><strong>三、架设成功打开 PT 站界面</strong></p>
+
+<p><img src="/assets/pt.jpg" alt="" /></p>
+
+<p><strong>四、其他</strong></p>
+
+<ol>
+  <li>
+    <p>Windows 下远程 SSH 连接主机推荐使用 putty 软件。</p>
+  </li>
+  <li>
+    <p>搭建好了之后，因为麦田 PT 是西北农林科技大学修改的，所以要针对我们的论坛修改一些网站设置。这时候还要搭建一个 FTP 服务器，方便上传和修改后台源文件。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install vsftpd
+</code></pre></div>    </div>
+
+    <p>安装后配置 FTP</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /etc/vsftpd.conf
+</code></pre></div>    </div>
+
+    <p>设置</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+</code></pre></div>    </div>
+
+    <p>重启服务</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /etc/init.d/vsftpd restart
+</code></pre></div>    </div>
+
+    <p>在FTP 软件输入本地用户名密码登陆即可</p>
+  </li>
+  <li>
+    <p>搭建好 PT 站才是刚刚开始，接下来要慢慢修改一些设置、UI等等的细节了，继续折腾。</p>
+  </li>
+  <li>
+    <p>额，明天还要继续过光棍节。</p>
+  </li>
+</ol>
+
+  </div><a class="u-url" href="/2012/11/10/pt-installation" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">Learn by doing.</li>
+          <li><a class="u-email" href="mailto:paicha.me@gmail.com">paicha.me@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web 开发者，用代码做产品。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/paicha" target="_blank" title="paicha"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/lai.jia.wei" target="_blank" title="lai.jia.wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://twitter.com/lai_jia_wei" target="_blank" title="lai_jia_wei"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
